@@ -16,7 +16,12 @@ public class BubbleSort {
                    swap(num ,j,j+1);
                 }
             }
-
+            // Print array after each pass
+            System.out.print("Pass " + (i + 1) + ": ");
+            for (int d : num) {
+                System.out.print(d + " ");
+            }
+            System.out.println(); // move to next line
         }
     }
     public static void main(String[] args) {
